@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01C64ADB8EAC4A92A47B0645 /* libPods-RecordsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92559F166548457EBD0D5DBE /* libPods-RecordsTests.a */; };
+		A74416C81638ED14005C0E78 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74416C71638ED14005C0E78 /* UIKit.framework */; };
+		A74416CA1638ED14005C0E78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74416C91638ED14005C0E78 /* Foundation.framework */; };
+		A74416CC1638ED14005C0E78 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74416CB1638ED14005C0E78 /* CoreGraphics.framework */; };
+		A74416D21638ED14005C0E78 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A74416D01638ED14005C0E78 /* InfoPlist.strings */; };
+		A74416D41638ED14005C0E78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A74416D31638ED14005C0E78 /* main.m */; };
+		A74416D81638ED14005C0E78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A74416D71638ED14005C0E78 /* AppDelegate.m */; };
+		A74416DB1638ED14005C0E78 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A74416D91638ED14005C0E78 /* MainStoryboard.storyboard */; };
+		A74416DE1638ED14005C0E78 /* RecordListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A74416DD1638ED14005C0E78 /* RecordListViewController.m */; };
+		A74416E61638ED14005C0E78 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74416E51638ED14005C0E78 /* SenTestingKit.framework */; };
+		A74416E71638ED14005C0E78 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74416C71638ED14005C0E78 /* UIKit.framework */; };
+		A74416E81638ED14005C0E78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74416C91638ED14005C0E78 /* Foundation.framework */; };
+		A74416F01638ED14005C0E78 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A74416EE1638ED14005C0E78 /* InfoPlist.strings */; };
+		A74417041638ED37005C0E78 /* BaseTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A74416FD1638ED37005C0E78 /* BaseTestCase.m */; };
+		A74417051638ED37005C0E78 /* RecordListDelegateAndDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A74416FF1638ED37005C0E78 /* RecordListDelegateAndDataSourceTests.m */; };
+		A74417071638ED37005C0E78 /* RecordListViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A74417031638ED37005C0E78 /* RecordListViewControllerTests.m */; };
+		A744171A16397D8B005C0E78 /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A744171916397D8B005C0E78 /* RecordViewController.m */; };
+		A744171E163986BC005C0E78 /* RecordViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A744171D163986BC005C0E78 /* RecordViewControllerTests.m */; };
+		A744173A1639D89F005C0E78 /* Record.m in Sources */ = {isa = PBXBuildFile; fileRef = A74417391639D89F005C0E78 /* Record.m */; };
+		A744173D1639D8D4005C0E78 /* RecordSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = A744173C1639D8D4005C0E78 /* RecordSpecs.m */; };
+		A744174D1639DDF3005C0E78 /* RecordListViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A744174C1639DDF3005C0E78 /* RecordListViewControllerSpec.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A74416E91638ED14005C0E78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A74416BA1638ED14005C0E78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A74416C21638ED14005C0E78;
+			remoteInfo = Records;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		92559F166548457EBD0D5DBE /* libPods-RecordsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecordsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2D9904EB6254C0296574F8F /* Pods-RecordsTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordsTests.xcconfig"; path = "../Pods/Pods-RecordsTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		A74416C31638ED14005C0E78 /* Records.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Records.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A74416C71638ED14005C0E78 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A74416C91638ED14005C0E78 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A74416CB1638ED14005C0E78 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A74416CF1638ED14005C0E78 /* Records-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Records-Info.plist"; sourceTree = "<group>"; };
+		A74416D11638ED14005C0E78 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A74416D31638ED14005C0E78 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A74416D51638ED14005C0E78 /* Records-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Records-Prefix.pch"; sourceTree = "<group>"; };
+		A74416D61638ED14005C0E78 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A74416D71638ED14005C0E78 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A74416DA1638ED14005C0E78 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		A74416DC1638ED14005C0E78 /* RecordListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordListViewController.h; sourceTree = "<group>"; };
+		A74416DD1638ED14005C0E78 /* RecordListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordListViewController.m; sourceTree = "<group>"; };
+		A74416E41638ED14005C0E78 /* RecordsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecordsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A74416E51638ED14005C0E78 /* SenTestingKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A74416ED1638ED14005C0E78 /* RecordsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RecordsTests-Info.plist"; sourceTree = "<group>"; };
+		A74416EF1638ED14005C0E78 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A74416FC1638ED37005C0E78 /* BaseTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTestCase.h; sourceTree = "<group>"; };
+		A74416FD1638ED37005C0E78 /* BaseTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTestCase.m; sourceTree = "<group>"; };
+		A74416FE1638ED37005C0E78 /* RecordListDelegateAndDataSourceTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordListDelegateAndDataSourceTests.h; sourceTree = "<group>"; };
+		A74416FF1638ED37005C0E78 /* RecordListDelegateAndDataSourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordListDelegateAndDataSourceTests.m; sourceTree = "<group>"; };
+		A74417021638ED37005C0E78 /* RecordListViewControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordListViewControllerTests.h; sourceTree = "<group>"; };
+		A74417031638ED37005C0E78 /* RecordListViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordListViewControllerTests.m; sourceTree = "<group>"; };
+		A744171816397D8B005C0E78 /* RecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordViewController.h; sourceTree = "<group>"; };
+		A744171916397D8B005C0E78 /* RecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordViewController.m; sourceTree = "<group>"; };
+		A744171C163986BC005C0E78 /* RecordViewControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordViewControllerTests.h; sourceTree = "<group>"; };
+		A744171D163986BC005C0E78 /* RecordViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordViewControllerTests.m; sourceTree = "<group>"; };
+		A74417331639D81E005C0E78 /* SpectaTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpectaTestCase.h; sourceTree = "<group>"; };
+		A74417381639D89F005C0E78 /* Record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Record.h; sourceTree = "<group>"; };
+		A74417391639D89F005C0E78 /* Record.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Record.m; sourceTree = "<group>"; };
+		A744173C1639D8D4005C0E78 /* RecordSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordSpecs.m; sourceTree = "<group>"; };
+		A744174C1639DDF3005C0E78 /* RecordListViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordListViewControllerSpec.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A74416C01638ED14005C0E78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A74416C81638ED14005C0E78 /* UIKit.framework in Frameworks */,
+				A74416CA1638ED14005C0E78 /* Foundation.framework in Frameworks */,
+				A74416CC1638ED14005C0E78 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A74416E01638ED14005C0E78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A74416E61638ED14005C0E78 /* SenTestingKit.framework in Frameworks */,
+				A74416E71638ED14005C0E78 /* UIKit.framework in Frameworks */,
+				A74416E81638ED14005C0E78 /* Foundation.framework in Frameworks */,
+				01C64ADB8EAC4A92A47B0645 /* libPods-RecordsTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A74416B81638ED13005C0E78 = {
+			isa = PBXGroup;
+			children = (
+				A74416CD1638ED14005C0E78 /* Records */,
+				A74416EB1638ED14005C0E78 /* RecordsTests */,
+				A74416C61638ED14005C0E78 /* Frameworks */,
+				A74416C41638ED14005C0E78 /* Products */,
+				A2D9904EB6254C0296574F8F /* Pods-RecordsTests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		A74416C41638ED14005C0E78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A74416C31638ED14005C0E78 /* Records.app */,
+				A74416E41638ED14005C0E78 /* RecordsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A74416C61638ED14005C0E78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A74416C71638ED14005C0E78 /* UIKit.framework */,
+				A74416C91638ED14005C0E78 /* Foundation.framework */,
+				A74416CB1638ED14005C0E78 /* CoreGraphics.framework */,
+				A74416E51638ED14005C0E78 /* SenTestingKit.framework */,
+				92559F166548457EBD0D5DBE /* libPods-RecordsTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A74416CD1638ED14005C0E78 /* Records */ = {
+			isa = PBXGroup;
+			children = (
+				A74416D61638ED14005C0E78 /* AppDelegate.h */,
+				A74416D71638ED14005C0E78 /* AppDelegate.m */,
+				A74416D91638ED14005C0E78 /* MainStoryboard.storyboard */,
+				A74417371639D878005C0E78 /* Record View */,
+				A7441717163972DC005C0E78 /* Record List */,
+				A74416CE1638ED14005C0E78 /* Supporting Files */,
+				A74417381639D89F005C0E78 /* Record.h */,
+				A74417391639D89F005C0E78 /* Record.m */,
+			);
+			path = Records;
+			sourceTree = "<group>";
+		};
+		A74416CE1638ED14005C0E78 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A74416CF1638ED14005C0E78 /* Records-Info.plist */,
+				A74416D01638ED14005C0E78 /* InfoPlist.strings */,
+				A74416D31638ED14005C0E78 /* main.m */,
+				A74416D51638ED14005C0E78 /* Records-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A74416EB1638ED14005C0E78 /* RecordsTests */ = {
+			isa = PBXGroup;
+			children = (
+				A744174B1639DCE0005C0E78 /* SpectaTests */,
+				A74417481639DCCC005C0E78 /* UnitTests */,
+				A74416EC1638ED14005C0E78 /* Supporting Files */,
+			);
+			path = RecordsTests;
+			sourceTree = "<group>";
+		};
+		A74416EC1638ED14005C0E78 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A74416ED1638ED14005C0E78 /* RecordsTests-Info.plist */,
+				A74416EE1638ED14005C0E78 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A7441717163972DC005C0E78 /* Record List */ = {
+			isa = PBXGroup;
+			children = (
+				A74416DC1638ED14005C0E78 /* RecordListViewController.h */,
+				A74416DD1638ED14005C0E78 /* RecordListViewController.m */,
+			);
+			name = "Record List";
+			sourceTree = "<group>";
+		};
+		A744171B1639864B005C0E78 /* Record List */ = {
+			isa = PBXGroup;
+			children = (
+				A74417021638ED37005C0E78 /* RecordListViewControllerTests.h */,
+				A74417031638ED37005C0E78 /* RecordListViewControllerTests.m */,
+				A74416FE1638ED37005C0E78 /* RecordListDelegateAndDataSourceTests.h */,
+				A74416FF1638ED37005C0E78 /* RecordListDelegateAndDataSourceTests.m */,
+			);
+			name = "Record List";
+			sourceTree = "<group>";
+		};
+		A74417371639D878005C0E78 /* Record View */ = {
+			isa = PBXGroup;
+			children = (
+				A744171816397D8B005C0E78 /* RecordViewController.h */,
+				A744171916397D8B005C0E78 /* RecordViewController.m */,
+			);
+			name = "Record View";
+			sourceTree = "<group>";
+		};
+		A74417481639DCCC005C0E78 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				A74416FC1638ED37005C0E78 /* BaseTestCase.h */,
+				A74416FD1638ED37005C0E78 /* BaseTestCase.m */,
+				A744171B1639864B005C0E78 /* Record List */,
+				A744174A1639DCD4005C0E78 /* Record View */,
+			);
+			name = UnitTests;
+			sourceTree = "<group>";
+		};
+		A744174A1639DCD4005C0E78 /* Record View */ = {
+			isa = PBXGroup;
+			children = (
+				A744171C163986BC005C0E78 /* RecordViewControllerTests.h */,
+				A744171D163986BC005C0E78 /* RecordViewControllerTests.m */,
+			);
+			name = "Record View";
+			sourceTree = "<group>";
+		};
+		A744174B1639DCE0005C0E78 /* SpectaTests */ = {
+			isa = PBXGroup;
+			children = (
+				A74417331639D81E005C0E78 /* SpectaTestCase.h */,
+				A744173C1639D8D4005C0E78 /* RecordSpecs.m */,
+				A744174C1639DDF3005C0E78 /* RecordListViewControllerSpec.m */,
+			);
+			name = SpectaTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A74416C21638ED14005C0E78 /* Records */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A74416F61638ED14005C0E78 /* Build configuration list for PBXNativeTarget "Records" */;
+			buildPhases = (
+				A74416BF1638ED14005C0E78 /* Sources */,
+				A74416C01638ED14005C0E78 /* Frameworks */,
+				A74416C11638ED14005C0E78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Records;
+			productName = Records;
+			productReference = A74416C31638ED14005C0E78 /* Records.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A74416E31638ED14005C0E78 /* RecordsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A74416F91638ED14005C0E78 /* Build configuration list for PBXNativeTarget "RecordsTests" */;
+			buildPhases = (
+				A74416DF1638ED14005C0E78 /* Sources */,
+				A74416E01638ED14005C0E78 /* Frameworks */,
+				A74416E11638ED14005C0E78 /* Resources */,
+				A74416E21638ED14005C0E78 /* ShellScript */,
+				3C90BC15B9CB4B77922514C3 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A74416EA1638ED14005C0E78 /* PBXTargetDependency */,
+			);
+			name = RecordsTests;
+			productName = RecordsTests;
+			productReference = A74416E41638ED14005C0E78 /* RecordsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A74416BA1638ED14005C0E78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = smn;
+			};
+			buildConfigurationList = A74416BD1638ED14005C0E78 /* Build configuration list for PBXProject "Records" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A74416B81638ED13005C0E78;
+			productRefGroup = A74416C41638ED14005C0E78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A74416C21638ED14005C0E78 /* Records */,
+				A74416E31638ED14005C0E78 /* RecordsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A74416C11638ED14005C0E78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A74416D21638ED14005C0E78 /* InfoPlist.strings in Resources */,
+				A74416DB1638ED14005C0E78 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A74416E11638ED14005C0E78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A74416F01638ED14005C0E78 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C90BC15B9CB4B77922514C3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Pods-RecordsTests-resources.sh\"\n";
+		};
+		A74416E21638ED14005C0E78 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A74416BF1638ED14005C0E78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A74416D41638ED14005C0E78 /* main.m in Sources */,
+				A74416D81638ED14005C0E78 /* AppDelegate.m in Sources */,
+				A74416DE1638ED14005C0E78 /* RecordListViewController.m in Sources */,
+				A744171A16397D8B005C0E78 /* RecordViewController.m in Sources */,
+				A744173A1639D89F005C0E78 /* Record.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A74416DF1638ED14005C0E78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A74417041638ED37005C0E78 /* BaseTestCase.m in Sources */,
+				A74417051638ED37005C0E78 /* RecordListDelegateAndDataSourceTests.m in Sources */,
+				A74417071638ED37005C0E78 /* RecordListViewControllerTests.m in Sources */,
+				A744171E163986BC005C0E78 /* RecordViewControllerTests.m in Sources */,
+				A744173D1639D8D4005C0E78 /* RecordSpecs.m in Sources */,
+				A744174D1639DDF3005C0E78 /* RecordListViewControllerSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A74416EA1638ED14005C0E78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A74416C21638ED14005C0E78 /* Records */;
+			targetProxy = A74416E91638ED14005C0E78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A74416D01638ED14005C0E78 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A74416D11638ED14005C0E78 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A74416D91638ED14005C0E78 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A74416DA1638ED14005C0E78 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		A74416EE1638ED14005C0E78 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A74416EF1638ED14005C0E78 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A74416F41638ED14005C0E78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A74416F51638ED14005C0E78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A74416F71638ED14005C0E78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Records/Records-Prefix.pch";
+				INFOPLIST_FILE = "Records/Records-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A74416F81638ED14005C0E78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Records/Records-Prefix.pch";
+				INFOPLIST_FILE = "Records/Records-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A74416FA1638ED14005C0E78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2D9904EB6254C0296574F8F /* Pods-RecordsTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Records.app/Records";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Records/Records-Prefix.pch";
+				INFOPLIST_FILE = "RecordsTests/RecordsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A74416FB1638ED14005C0E78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2D9904EB6254C0296574F8F /* Pods-RecordsTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Records.app/Records";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Records/Records-Prefix.pch";
+				INFOPLIST_FILE = "RecordsTests/RecordsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A74416BD1638ED14005C0E78 /* Build configuration list for PBXProject "Records" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A74416F41638ED14005C0E78 /* Debug */,
+				A74416F51638ED14005C0E78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A74416F61638ED14005C0E78 /* Build configuration list for PBXNativeTarget "Records" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A74416F71638ED14005C0E78 /* Debug */,
+				A74416F81638ED14005C0E78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A74416F91638ED14005C0E78 /* Build configuration list for PBXNativeTarget "RecordsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A74416FA1638ED14005C0E78 /* Debug */,
+				A74416FB1638ED14005C0E78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A74416BA1638ED14005C0E78 /* Project object */;
+}
