@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class Record;
+
 @interface RecordViewController : UIViewController
 
-@property (nonatomic, assign) NSString *artistName;
+@property (nonatomic, strong) Record *record;
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (strong, nonatomic) NSURLRequest *request;
 

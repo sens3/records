@@ -9,19 +9,22 @@
 #import "RecordListDelegateAndDataSourceTests.h"
 #import "RecordListViewController.h"
 #import "RecordViewController.h"
+#import "RecordCell.h"
 #import "Record.h"
 
 @implementation RecordListDelegateAndDataSourceTests {
     RecordListViewController *controller;
+    id record1;
+    id record2;
 }
 
 - (void)setUp
 {
     [super setUp];
     controller = [self instantiateStoryboardControllerWithIdentifier:@"Record List"];
-    id record1 = mock([Record class]);
+    record1 = mock([Record class]);
     [given([record1 artistName]) willReturn:@"First Artist"];
-    id record2 = mock([Record class]);
+    record2 = mock([Record class]);
     [given([record2 artistName]) willReturn:@"Second Artist"];
     controller.records = [NSArray arrayWithObjects:record1, record2, nil];
 }
@@ -46,47 +49,17 @@
     STAssertEqualObjects(@"Record Cell", cell.reuseIdentifier, nil);
 }
 
-- (void)test_RecordListDS_setsTheCellTextLabel
+- (void)test_RecordListDS_setsTheCellRecord
 {
-    UITableViewCell *cell;
+    RecordCell *cell;
     
-    cell = [controller tableView:controller.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    cell = (RecordCell *)[controller tableView:controller.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
     
-    STAssertEqualObjects(@"First Artist", cell.textLabel.text, nil);
+    STAssertEqualObjects(record1, cell.record, nil);
     
-    cell = [controller tableView:controller.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0]];
+    cell = (RecordCell *)[controller tableView:controller.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0]];
     
-    STAssertEqualObjects(@"Second Artist", cell.textLabel.text, nil);
-}
-
-- (void)test_RecordListDS_seque_showsRecordVCWhenCellIsSelected
-{
-    [controller performSegueWithIdentifier:@"Show Record" sender:nil];
-    
-    RecordViewController *recordVC = (RecordViewController *) controller.navigationController.visibleViewController;
-    
-    STAssertTrue([recordVC isKindOfClass:[RecordViewController class]],
-                 @"Presented View Controller should be of class RecordListViewController but was %@", [recordVC class]);
-}
-
-- (void)test_RecordListDS_segue_setsArtistNameForRecordVC
-{
-    UITableViewCell *cell;
-    RecordViewController *recordVC;
-    
-    cell = [controller tableView:controller.tableView
-           cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
-    [controller performSegueWithIdentifier:@"Show Record" sender:cell];
-    recordVC = (RecordViewController *) controller.navigationController.visibleViewController;
-    
-    STAssertEqualObjects(@"First Artist", recordVC.artistName, nil);
-    
-    cell = [controller tableView:controller.tableView
-           cellForRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0]];
-    [controller performSegueWithIdentifier:@"Show Record" sender:cell];
-    recordVC = (RecordViewController *) controller.navigationController.visibleViewController;
-    
-    STAssertEqualObjects(@"Second Artist", recordVC.artistName, nil);
+    STAssertEqualObjects(record2, cell.record, nil);
 }
 
 

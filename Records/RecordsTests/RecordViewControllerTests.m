@@ -28,7 +28,7 @@
     controller = [self instantiateStoryboardControllerWithIdentifier:@"Record"];
     Record *duke = [[Record alloc] init];
     duke.artistName = @"Duke Ellington";
-    controller.artistName = duke.artistName;
+    controller.record = duke;
 }
 
 - (void)test_RecordVC_existsInTheStoryboard

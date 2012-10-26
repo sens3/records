@@ -9,6 +9,7 @@
 #import "RecordListViewController.h"
 #import "RecordViewController.h"
 #import "Record.h"
+#import "RecordCell.h"
 
 @interface RecordListViewController ()
 
@@ -56,14 +57,14 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Record Cell"];
+    RecordCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Record Cell"];
     
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Record Cell"];
+        cell = (RecordCell *)[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Record Cell"];
     }
     
     Record *record = [_records objectAtIndex:indexPath.row];
-    
+    cell.record = record;
     [cell.textLabel setText:record.artistName];
     
     return cell;
@@ -71,10 +72,10 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    UITableViewCell *cell = (UITableViewCell *)sender;
+    RecordCell *cell = (RecordCell *)sender;
     if ([segue.identifier isEqualToString:@"Show Record"]) {
         RecordViewController *recordVC = (RecordViewController *)[segue destinationViewController];
-        recordVC.artistName = cell.textLabel.text;
+        recordVC.record = cell.record;
     }
 }
 

@@ -23,7 +23,7 @@ describe(@"RecordViewController", ^{
         controller = [storyboard instantiateViewControllerWithIdentifier:@"Record"];
         duke = [[Record alloc] init];
         duke.artistName = @"Duke Ellington";
-        controller.artistName = duke.artistName;
+        controller.record = duke;
         navController = [[UINavigationController alloc] init];
         [navController pushViewController:controller animated:NO];
         [controller loadView];
@@ -40,7 +40,7 @@ describe(@"RecordViewController", ^{
     describe(@"view did load", ^{
         
         before(^{
-            [controller viewDidLoad];
+            [controller viewDidLoad];            
         });
         
         it(@"sets the title", ^{
@@ -51,8 +51,7 @@ describe(@"RecordViewController", ^{
         it(@"inits the request", ^{
             NSString *actual = controller.request.URL.absoluteString;
             NSString *expected = @"http://www.discogs.com/search?q=Duke%20Ellington";
-            
-            expect(actual).to.equal(expected);
+            expect(actual).equal(expected);
         });
         
         it(@"loads request in webview", ^{

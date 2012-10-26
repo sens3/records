@@ -31,6 +31,8 @@
 		A771A3A2163AE0E6003D657D /* SenTestLog+SpectaLog.m in Sources */ = {isa = PBXBuildFile; fileRef = A771A3A1163AE0E6003D657D /* SenTestLog+SpectaLog.m */; };
 		A771A3B4163AFF0C003D657D /* RecordViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A771A3B3163AFF0C003D657D /* RecordViewControllerSpec.m */; };
 		A771A3B8163B0959003D657D /* UIWebViewStub.m in Sources */ = {isa = PBXBuildFile; fileRef = A771A3B7163B0959003D657D /* UIWebViewStub.m */; };
+		A771A3BB163B0DC3003D657D /* RecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A771A3BA163B0DC3003D657D /* RecordCell.m */; };
+		A771A3BE163B0E8E003D657D /* RecordCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A771A3BD163B0E8E003D657D /* RecordCellTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,10 @@
 		A771A3B3163AFF0C003D657D /* RecordViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordViewControllerSpec.m; sourceTree = "<group>"; };
 		A771A3B6163B0959003D657D /* UIWebViewStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWebViewStub.h; sourceTree = "<group>"; };
 		A771A3B7163B0959003D657D /* UIWebViewStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIWebViewStub.m; sourceTree = "<group>"; };
+		A771A3B9163B0DC3003D657D /* RecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordCell.h; sourceTree = "<group>"; };
+		A771A3BA163B0DC3003D657D /* RecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordCell.m; sourceTree = "<group>"; };
+		A771A3BC163B0E8E003D657D /* RecordCellTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordCellTests.h; sourceTree = "<group>"; };
+		A771A3BD163B0E8E003D657D /* RecordCellTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordCellTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +200,8 @@
 			children = (
 				A74416DC1638ED14005C0E78 /* RecordListViewController.h */,
 				A74416DD1638ED14005C0E78 /* RecordListViewController.m */,
+				A771A3B9163B0DC3003D657D /* RecordCell.h */,
+				A771A3BA163B0DC3003D657D /* RecordCell.m */,
 			);
 			name = "Record List";
 			sourceTree = "<group>";
@@ -205,6 +213,8 @@
 				A74417031638ED37005C0E78 /* RecordListViewControllerTests.m */,
 				A74416FE1638ED37005C0E78 /* RecordListDelegateAndDataSourceTests.h */,
 				A74416FF1638ED37005C0E78 /* RecordListDelegateAndDataSourceTests.m */,
+				A771A3BC163B0E8E003D657D /* RecordCellTests.h */,
+				A771A3BD163B0E8E003D657D /* RecordCellTests.m */,
 			);
 			name = "Record List";
 			sourceTree = "<group>";
@@ -378,6 +388,7 @@
 				A74416DE1638ED14005C0E78 /* RecordListViewController.m in Sources */,
 				A744171A16397D8B005C0E78 /* RecordViewController.m in Sources */,
 				A744173A1639D89F005C0E78 /* Record.m in Sources */,
+				A771A3BB163B0DC3003D657D /* RecordCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +405,7 @@
 				A771A3A2163AE0E6003D657D /* SenTestLog+SpectaLog.m in Sources */,
 				A771A3B4163AFF0C003D657D /* RecordViewControllerSpec.m in Sources */,
 				A771A3B8163B0959003D657D /* UIWebViewStub.m in Sources */,
+				A771A3BE163B0E8E003D657D /* RecordCellTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

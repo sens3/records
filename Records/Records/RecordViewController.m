@@ -7,6 +7,7 @@
 //
 
 #import "RecordViewController.h"
+#import "Record.h"
 
 @interface RecordViewController ()
 
@@ -27,11 +28,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    if (_artistName)
-        [self setTitle:_artistName];
-
+    [self setTitle:_record.artistName];
     [self initRequest];
-    
     [self.webView loadRequest:_request];
 }
 
@@ -50,7 +48,7 @@
 - (void)initRequest
 {
     if (!_request) {
-        NSString *urlString = [@"http://www.discogs.com/search?q=" stringByAppendingString:_artistName];
+        NSString *urlString = [@"http://www.discogs.com/search?q=" stringByAppendingString:_record.artistName];
         urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
         _request = [NSURLRequest requestWithURL:[NSURL URLWithString:urlString]];
     }
