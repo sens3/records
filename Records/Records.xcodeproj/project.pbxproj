@@ -33,6 +33,8 @@
 		A771A3B8163B0959003D657D /* UIWebViewStub.m in Sources */ = {isa = PBXBuildFile; fileRef = A771A3B7163B0959003D657D /* UIWebViewStub.m */; };
 		A771A3BB163B0DC3003D657D /* RecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A771A3BA163B0DC3003D657D /* RecordCell.m */; };
 		A771A3BE163B0E8E003D657D /* RecordCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A771A3BD163B0E8E003D657D /* RecordCellTests.m */; };
+		A771A3C3163B1462003D657D /* RecordCellSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A771A3C2163B1462003D657D /* RecordCellSpec.m */; };
+		A771A3C8163B1661003D657D /* RecordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A771A3C7163B1661003D657D /* RecordTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,20 +77,23 @@
 		A744171916397D8B005C0E78 /* RecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordViewController.m; sourceTree = "<group>"; };
 		A744171C163986BC005C0E78 /* RecordViewControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordViewControllerTests.h; sourceTree = "<group>"; };
 		A744171D163986BC005C0E78 /* RecordViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordViewControllerTests.m; sourceTree = "<group>"; };
-		A74417331639D81E005C0E78 /* SpectaTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpectaTestCase.h; sourceTree = "<group>"; };
+		A74417331639D81E005C0E78 /* SpectaTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpectaTestCase.h; path = RecordsTests/SpectaTestCase.h; sourceTree = "<group>"; };
 		A74417381639D89F005C0E78 /* Record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Record.h; sourceTree = "<group>"; };
 		A74417391639D89F005C0E78 /* Record.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Record.m; sourceTree = "<group>"; };
-		A744173C1639D8D4005C0E78 /* RecordSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordSpecs.m; sourceTree = "<group>"; };
+		A744173C1639D8D4005C0E78 /* RecordSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecordSpecs.m; path = RecordsTests/RecordSpecs.m; sourceTree = "<group>"; };
 		A744174C1639DDF3005C0E78 /* RecordListViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordListViewControllerSpec.m; sourceTree = "<group>"; };
-		A771A3A0163AE0E6003D657D /* SenTestLog+SpectaLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SenTestLog+SpectaLog.h"; sourceTree = "<group>"; };
-		A771A3A1163AE0E6003D657D /* SenTestLog+SpectaLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SenTestLog+SpectaLog.m"; sourceTree = "<group>"; };
+		A771A3A0163AE0E6003D657D /* SenTestLog+SpectaLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SenTestLog+SpectaLog.h"; path = "RecordsTests/SenTestLog+SpectaLog.h"; sourceTree = "<group>"; };
+		A771A3A1163AE0E6003D657D /* SenTestLog+SpectaLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SenTestLog+SpectaLog.m"; path = "RecordsTests/SenTestLog+SpectaLog.m"; sourceTree = "<group>"; };
 		A771A3B3163AFF0C003D657D /* RecordViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordViewControllerSpec.m; sourceTree = "<group>"; };
-		A771A3B6163B0959003D657D /* UIWebViewStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWebViewStub.h; sourceTree = "<group>"; };
-		A771A3B7163B0959003D657D /* UIWebViewStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIWebViewStub.m; sourceTree = "<group>"; };
+		A771A3B6163B0959003D657D /* UIWebViewStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIWebViewStub.h; path = RecordsTests/UIWebViewStub.h; sourceTree = "<group>"; };
+		A771A3B7163B0959003D657D /* UIWebViewStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIWebViewStub.m; path = RecordsTests/UIWebViewStub.m; sourceTree = "<group>"; };
 		A771A3B9163B0DC3003D657D /* RecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordCell.h; sourceTree = "<group>"; };
 		A771A3BA163B0DC3003D657D /* RecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordCell.m; sourceTree = "<group>"; };
 		A771A3BC163B0E8E003D657D /* RecordCellTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordCellTests.h; sourceTree = "<group>"; };
 		A771A3BD163B0E8E003D657D /* RecordCellTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordCellTests.m; sourceTree = "<group>"; };
+		A771A3C2163B1462003D657D /* RecordCellSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordCellSpec.m; sourceTree = "<group>"; };
+		A771A3C6163B1661003D657D /* RecordTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordTests.h; sourceTree = "<group>"; };
+		A771A3C7163B1661003D657D /* RecordTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +126,8 @@
 			children = (
 				A74416CD1638ED14005C0E78 /* Records */,
 				A74416EB1638ED14005C0E78 /* RecordsTests */,
+				A771A3C4163B15CB003D657D /* RecordSpecs */,
+				A771A3C5163B1608003D657D /* Stubs */,
 				A74416C61638ED14005C0E78 /* Frameworks */,
 				A74416C41638ED14005C0E78 /* Products */,
 				A2D9904EB6254C0296574F8F /* Pods-RecordsTests.xcconfig */,
@@ -177,11 +184,13 @@
 		A74416EB1638ED14005C0E78 /* RecordsTests */ = {
 			isa = PBXGroup;
 			children = (
-				A744174B1639DCE0005C0E78 /* SpectaTests */,
-				A74417481639DCCC005C0E78 /* UnitTests */,
+				A74416FC1638ED37005C0E78 /* BaseTestCase.h */,
+				A74416FD1638ED37005C0E78 /* BaseTestCase.m */,
+				A744171B1639864B005C0E78 /* Record List */,
+				A744174A1639DCD4005C0E78 /* Record View */,
 				A74416EC1638ED14005C0E78 /* Supporting Files */,
-				A771A3B6163B0959003D657D /* UIWebViewStub.h */,
-				A771A3B7163B0959003D657D /* UIWebViewStub.m */,
+				A771A3C6163B1661003D657D /* RecordTests.h */,
+				A771A3C7163B1661003D657D /* RecordTests.m */,
 			);
 			path = RecordsTests;
 			sourceTree = "<group>";
@@ -228,17 +237,6 @@
 			name = "Record View";
 			sourceTree = "<group>";
 		};
-		A74417481639DCCC005C0E78 /* UnitTests */ = {
-			isa = PBXGroup;
-			children = (
-				A74416FC1638ED37005C0E78 /* BaseTestCase.h */,
-				A74416FD1638ED37005C0E78 /* BaseTestCase.m */,
-				A744171B1639864B005C0E78 /* Record List */,
-				A744174A1639DCD4005C0E78 /* Record View */,
-			);
-			name = UnitTests;
-			sourceTree = "<group>";
-		};
 		A744174A1639DCD4005C0E78 /* Record View */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,17 +246,45 @@
 			name = "Record View";
 			sourceTree = "<group>";
 		};
-		A744174B1639DCE0005C0E78 /* SpectaTests */ = {
+		A771A3BF163B1431003D657D /* Record List */ = {
+			isa = PBXGroup;
+			children = (
+				A744174C1639DDF3005C0E78 /* RecordListViewControllerSpec.m */,
+				A771A3C2163B1462003D657D /* RecordCellSpec.m */,
+			);
+			name = "Record List";
+			path = RecordsTests;
+			sourceTree = "<group>";
+		};
+		A771A3C0163B1443003D657D /* Record View */ = {
+			isa = PBXGroup;
+			children = (
+				A771A3B3163AFF0C003D657D /* RecordViewControllerSpec.m */,
+			);
+			name = "Record View";
+			path = RecordsTests;
+			sourceTree = "<group>";
+		};
+		A771A3C4163B15CB003D657D /* RecordSpecs */ = {
 			isa = PBXGroup;
 			children = (
 				A74417331639D81E005C0E78 /* SpectaTestCase.h */,
 				A771A3A0163AE0E6003D657D /* SenTestLog+SpectaLog.h */,
 				A771A3A1163AE0E6003D657D /* SenTestLog+SpectaLog.m */,
 				A744173C1639D8D4005C0E78 /* RecordSpecs.m */,
-				A744174C1639DDF3005C0E78 /* RecordListViewControllerSpec.m */,
-				A771A3B3163AFF0C003D657D /* RecordViewControllerSpec.m */,
+				A771A3BF163B1431003D657D /* Record List */,
+				A771A3C0163B1443003D657D /* Record View */,
 			);
-			name = SpectaTests;
+			name = RecordSpecs;
+			sourceTree = "<group>";
+		};
+		A771A3C5163B1608003D657D /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				A771A3B6163B0959003D657D /* UIWebViewStub.h */,
+				A771A3B7163B0959003D657D /* UIWebViewStub.m */,
+			);
+			name = Stubs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,6 +432,8 @@
 				A771A3B4163AFF0C003D657D /* RecordViewControllerSpec.m in Sources */,
 				A771A3B8163B0959003D657D /* UIWebViewStub.m in Sources */,
 				A771A3BE163B0E8E003D657D /* RecordCellTests.m in Sources */,
+				A771A3C3163B1462003D657D /* RecordCellSpec.m in Sources */,
+				A771A3C8163B1661003D657D /* RecordTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
