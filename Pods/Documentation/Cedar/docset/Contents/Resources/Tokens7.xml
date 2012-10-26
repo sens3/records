@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CDRExampleGroup.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CDRExampleGroup</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleGroup.h</DeclaredIn>
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRExampleGroup/setExamples:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleGroup.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *examples</Declaration>
+			
+			
+			<Anchor>//api/name/examples</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CDRExampleGroup/examples</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleGroup.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *examples</Declaration>
+			
+			
+			<Anchor>//api/name/examples</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CDRExampleGroup/groupWithText:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleGroup.h</DeclaredIn>			
+			
+			<Declaration>+ (id)groupWithText:(NSString *)text</Declaration>
+			
+			
+			<Anchor>//api/name/groupWithText:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRExampleGroup/initWithText:isRoot:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleGroup.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithText:(NSString *)text isRoot:(BOOL)isRoot</Declaration>
+			
+			
+			<Anchor>//api/name/initWithText:isRoot:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRExampleGroup/add:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleGroup.h</DeclaredIn>			
+			
+			<Declaration>- (void)add:(CDRExampleBase *)example</Declaration>
+			
+			
+			<Anchor>//api/name/add:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRExampleGroup/addBefore:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleGroup.h</DeclaredIn>			
+			
+			<Declaration>- (void)addBefore:(CDRSpecBlock)block</Declaration>
+			
+			
+			<Anchor>//api/name/addBefore:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRExampleGroup/addAfter:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleGroup.h</DeclaredIn>			
+			
+			<Declaration>- (void)addAfter:(CDRSpecBlock)block</Declaration>
+			
+			
+			<Anchor>//api/name/addAfter:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

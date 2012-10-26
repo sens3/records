@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CDRDefaultReporter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CDRDefaultReporter</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRDefaultReporter.h</DeclaredIn>
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRDefaultReporter/successToken</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRDefaultReporter.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)successToken</Declaration>
+			
+			
+			<Anchor>//api/name/successToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRDefaultReporter/pendingToken</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRDefaultReporter.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)pendingToken</Declaration>
+			
+			
+			<Anchor>//api/name/pendingToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRDefaultReporter/pendingMessageForExample:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRDefaultReporter.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)pendingMessageForExample:(CDRExample *)example</Declaration>
+			
+			
+			<Anchor>//api/name/pendingMessageForExample:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRDefaultReporter/skippedToken</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRDefaultReporter.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)skippedToken</Declaration>
+			
+			
+			<Anchor>//api/name/skippedToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRDefaultReporter/skippedMessageForExample:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRDefaultReporter.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)skippedMessageForExample:(CDRExample *)example</Declaration>
+			
+			
+			<Anchor>//api/name/skippedMessageForExample:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRDefaultReporter/failureToken</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRDefaultReporter.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)failureToken</Declaration>
+			
+			
+			<Anchor>//api/name/failureToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRDefaultReporter/failureMessageForExample:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRDefaultReporter.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)failureMessageForExample:(CDRExample *)example</Declaration>
+			
+			
+			<Anchor>//api/name/failureMessageForExample:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRDefaultReporter/errorToken</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRDefaultReporter.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)errorToken</Declaration>
+			
+			
+			<Anchor>//api/name/errorToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRDefaultReporter/errorMessageForExample:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRDefaultReporter.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)errorMessageForExample:(CDRExample *)example</Declaration>
+			
+			
+			<Anchor>//api/name/errorMessageForExample:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRDefaultReporter/reportOnExample:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRDefaultReporter.h</DeclaredIn>			
+			
+			<Declaration>- (void)reportOnExample:(CDRExample *)example</Declaration>
+			
+			
+			<Anchor>//api/name/reportOnExample:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRDefaultReporter/printStats</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRDefaultReporter.h</DeclaredIn>			
+			
+			<Declaration>- (void)printStats</Declaration>
+			
+			
+			<Anchor>//api/name/printStats</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

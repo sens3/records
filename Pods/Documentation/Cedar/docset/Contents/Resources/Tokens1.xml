@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CDRClassFake.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CDRClassFake</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRClassFake.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/CDRExampleParent.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/CDRExampleParent</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleParent.h</DeclaredIn>
+			
+			<NodeRef refid="30"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CDRExampleParent/shouldRun</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleParent.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)shouldRun</Declaration>
+			
+			
+			<Anchor>//api/name/shouldRun</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CDRExampleParent/setUp</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleParent.h</DeclaredIn>			
+			
+			<Declaration>- (void)setUp</Declaration>
+			
+			
+			<Anchor>//api/name/setUp</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CDRExampleParent/tearDown</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleParent.h</DeclaredIn>			
+			
+			<Declaration>- (void)tearDown</Declaration>
+			
+			
+			<Anchor>//api/name/tearDown</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CDRExampleParent/hasFullText</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleParent.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)hasFullText</Declaration>
+			
+			
+			<Anchor>//api/name/hasFullText</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CDRExampleParent/fullText</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleParent.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)fullText</Declaration>
+			
+			
+			<Anchor>//api/name/fullText</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CDRExampleParent/fullTextInPieces</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleParent.h</DeclaredIn>			
+			
+			<Declaration>- (NSMutableArray *)fullTextInPieces</Declaration>
+			
+			
+			<Anchor>//api/name/fullTextInPieces</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CDRSpecFailure.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CDRSpecFailure</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRSpecFailure.h</DeclaredIn>
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRSpecFailure/setFileName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRSpecFailure.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSString *fileName</Declaration>
+			
+			
+			<Anchor>//api/name/fileName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CDRSpecFailure/fileName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRSpecFailure.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSString *fileName</Declaration>
+			
+			
+			<Anchor>//api/name/fileName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRSpecFailure/setLineNumber:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRSpecFailure.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) int lineNumber</Declaration>
+			
+			
+			<Anchor>//api/name/lineNumber</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CDRSpecFailure/lineNumber</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRSpecFailure.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) int lineNumber</Declaration>
+			
+			
+			<Anchor>//api/name/lineNumber</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CDRSpecFailure/specFailureWithReason:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRSpecFailure.h</DeclaredIn>			
+			
+			<Declaration>+ (id)specFailureWithReason:(NSString *)reason</Declaration>
+			
+			
+			<Anchor>//api/name/specFailureWithReason:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CDRSpecFailure/specFailureWithReason:fileName:lineNumber:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRSpecFailure.h</DeclaredIn>			
+			
+			<Declaration>+ (id)specFailureWithReason:(NSString *)reason fileName:(NSString *)fileName lineNumber:(int)lineNumber</Declaration>
+			
+			
+			<Anchor>//api/name/specFailureWithReason:fileName:lineNumber:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CDRSpecFailure/specFailureWithRaisedObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRSpecFailure.h</DeclaredIn>			
+			
+			<Declaration>+ (id)specFailureWithRaisedObject:(NSObject *)object</Declaration>
+			
+			
+			<Anchor>//api/name/specFailureWithRaisedObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRSpecFailure/initWithReason:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRSpecFailure.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithReason:(NSString *)reason</Declaration>
+			
+			
+			<Anchor>//api/name/initWithReason:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRSpecFailure/initWithReason:fileName:lineNumber:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRSpecFailure.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithReason:(NSString *)reason fileName:(NSString *)fileName lineNumber:(int)lineNumber</Declaration>
+			
+			
+			<Anchor>//api/name/initWithReason:fileName:lineNumber:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRSpecFailure/initWithRaisedObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRSpecFailure.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithRaisedObject:(NSObject *)object</Declaration>
+			
+			
+			<Anchor>//api/name/initWithRaisedObject:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

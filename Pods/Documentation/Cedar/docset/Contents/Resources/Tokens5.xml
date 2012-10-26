@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CDRExampleBase.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CDRExampleBase</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleBase.h</DeclaredIn>
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRExampleBase/setText:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleBase.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CDRExampleBase/text</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleBase.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRExampleBase/setParent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleBase.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;CDRExampleParent&gt; parent</Declaration>
+			
+			
+			<Anchor>//api/name/parent</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CDRExampleBase/parent</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleBase.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;CDRExampleParent&gt; parent</Declaration>
+			
+			
+			<Anchor>//api/name/parent</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRExampleBase/setFocused:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleBase.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, getter=isFocused) BOOL focused</Declaration>
+			
+			
+			<Anchor>//api/name/focused</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CDRExampleBase/focused</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleBase.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, getter=isFocused) BOOL focused</Declaration>
+			
+			
+			<Anchor>//api/name/focused</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRExampleBase/initWithText:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleBase.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithText:(NSString *)text</Declaration>
+			
+			
+			<Anchor>//api/name/initWithText:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRExampleBase/run</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleBase.h</DeclaredIn>			
+			
+			<Declaration>- (void)run</Declaration>
+			
+			
+			<Anchor>//api/name/run</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRExampleBase/shouldRun</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleBase.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)shouldRun</Declaration>
+			
+			
+			<Anchor>//api/name/shouldRun</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRExampleBase/hasChildren</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleBase.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)hasChildren</Declaration>
+			
+			
+			<Anchor>//api/name/hasChildren</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRExampleBase/hasFocusedExamples</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleBase.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)hasFocusedExamples</Declaration>
+			
+			
+			<Anchor>//api/name/hasFocusedExamples</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRExampleBase/message</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleBase.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)message</Declaration>
+			
+			
+			<Anchor>//api/name/message</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRExampleBase/fullText</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleBase.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)fullText</Declaration>
+			
+			
+			<Anchor>//api/name/fullText</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRExampleBase/fullTextInPieces</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleBase.h</DeclaredIn>			
+			
+			<Declaration>- (NSMutableArray *)fullTextInPieces</Declaration>
+			
+			
+			<Anchor>//api/name/fullTextInPieces</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRExampleBase/state</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleBase.h</DeclaredIn>			
+			
+			<Declaration>- (CDRExampleState)state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CDRExampleBase/progress</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CDRExampleBase.h</DeclaredIn>			
+			
+			<Declaration>- (float)progress</Declaration>
+			
+			
+			<Anchor>//api/name/progress</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>
