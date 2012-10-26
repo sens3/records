@@ -2,6 +2,16 @@ Records
 ==
 #### A little showcase app to compare writing tests/specs with OCUnit (TDD) vs. Specta (BDD).
 
+#### TL;DR
+
+Compare these two files:
+
+* [https://github.com/sens3/records/blob/master/Records/RecordsTests/RecordViewControllerTests.m](https://github.com/sens3/records/blob/master/Records/RecordsTests/RecordViewControllerTests.m)
+* [https://github.com/sens3/records/blob/master/Records/RecordsTests/RecordViewControllerSpec.m](https://github.com/sens3/records/blob/master/Records/RecordsTests/RecordViewControllerSpec.m)
+
+and decide for yourself which one you like better.
+
+
 ### Setup
 
 Please run __pod install__ before building the app.

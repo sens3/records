@@ -10,13 +10,6 @@
 #import "RecordViewController.h"
 #import "Record.h"
 
-//
-// UIWebViewStub
-//
-
-//
-//
-//
 
 @implementation RecordViewControllerTests{
     RecordViewController *controller;
