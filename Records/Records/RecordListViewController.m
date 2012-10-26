@@ -20,6 +20,11 @@
 {
     self = [super initWithCoder:aDecoder];
     if (self) {
+        Record *duke = [[Record alloc] init];
+        duke.artistName = @"Duke Ellington";
+        Record *sonny = [[Record alloc] init];
+        sonny.artistName = @"Sonny Rollins";
+        _records = [NSArray arrayWithObjects:duke, sonny, nil];
     }
     
     return self;

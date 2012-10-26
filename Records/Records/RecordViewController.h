@@ -10,7 +10,7 @@
 
 @interface RecordViewController : UIViewController
 
-@property (nonatomic, strong) NSString *artistName;
+@property (nonatomic, assign) NSString *artistName;
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (strong, nonatomic) NSURLRequest *request;
 

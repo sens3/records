@@ -10,8 +10,8 @@
 
 @interface Record : NSObject
 
-@property (nonatomic, strong) NSString *artistName;
-@property (nonatomic, strong) NSString *title;
-@property (nonatomic, strong) NSString *discogsURL;
+@property (nonatomic, assign) NSString *artistName;
+@property (nonatomic, assign) NSString *title;
+@property (nonatomic, assign) NSString *discogsURL;
 
 @end

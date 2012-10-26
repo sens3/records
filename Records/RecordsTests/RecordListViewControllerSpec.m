@@ -14,13 +14,12 @@
 SpecBegin(RecordListViewController)
 
 describe(@"RecordListViewController", ^{
-    
-    __block UIStoryboard *storyboard;
+
     __block RecordListViewController *controller;
     __block UINavigationController *navController;
     
     before(^{
-        storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
         controller = [storyboard instantiateViewControllerWithIdentifier:@"Record List"];
         navController = [[UINavigationController alloc] init];
         [navController pushViewController:controller animated:NO];
@@ -32,6 +31,7 @@ describe(@"RecordListViewController", ^{
     });
     
     it(@"is the first visible controller", ^{
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
         UINavigationController *initialController = [storyboard instantiateInitialViewController];
         id contr = [initialController visibleViewController];
         

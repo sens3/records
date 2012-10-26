@@ -16,21 +16,20 @@ static void testlog (NSString *message)
 	[(NSFileHandle *)[NSFileHandle fileHandleWithStandardError] writeData:[line dataUsingEncoding:NSUTF8StringEncoding]];
 }
 
-+ (void) testCaseDidStart:(NSNotification *) aNotification
-{
-//    SenTestRun *run = [aNotification run];
-//    testlog ([NSString stringWithFormat:@"Test Case '%@' started.", [run test]]);
-}
+//+ (void) testCaseDidStart:(NSNotification *) aNotification
+//{
+////    SenTestRun *run = [aNotification run];
+////    testlog ([NSString stringWithFormat:@"Test Case '%@' started.", [run test]]);
+//}
 
 + (void) testCaseDidStop:(NSNotification *) aNotification
 {
     SenTestRun *run = [aNotification run];
     if (![run hasSucceeded]) {
-        testlog ([NSString stringWithFormat:@"Test Case '%@' started.", [run test]]);       
+//        testlog ([NSString stringWithFormat:@"Test Case '%@' started.", [run test]]);       
         testlog ([NSString stringWithFormat:@"Test Case '%@' %s (%.3f seconds).", [run test], ([run hasSucceeded] ? "passed" : "failed"), [run totalDuration]]);
     }
 }
-
 
 + (void) testSuiteDidStart:(NSNotification *) aNotification
 {
@@ -53,17 +52,6 @@ static void testlog (NSString *message)
     } else {
         testlog ([NSString stringWithFormat:@"Test Suite '%@' finished", [run test]]);
     }
-}
-
-
-+ (void) testCaseDidFail:(NSNotification *) aNotification
-{
-    NSException *exception = [aNotification exception];
-    testlog ([NSString stringWithFormat:@"%@:%@: error: %@ : %@",
-              [exception filePathInProject],
-              [exception lineNumber],
-              [aNotification test],
-              [exception reason]]);
 }
 
 

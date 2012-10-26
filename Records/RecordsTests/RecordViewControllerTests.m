@@ -8,20 +8,12 @@
 
 #import "RecordViewControllerTests.h"
 #import "RecordViewController.h"
+#import "Record.h"
 
 //
 // UIWebViewStub
 //
-@interface UIWebViewStub : UIWebView
-@property (nonatomic, strong) NSURLRequest *loadedRequest;
-@end
 
-@implementation UIWebViewStub
-- (void)loadRequest:(NSURLRequest *)request
-{
-    self.loadedRequest = request;
-}
-@end
 //
 //
 //
@@ -34,7 +26,9 @@
 {
     [super setUp];
     controller = [self instantiateStoryboardControllerWithIdentifier:@"Record"];
-    controller.artistName = @"Duke Ellington";
+    Record *duke = [[Record alloc] init];
+    duke.artistName = @"Duke Ellington";
+    controller.artistName = duke.artistName;
 }
 
 - (void)test_RecordVC_existsInTheStoryboard

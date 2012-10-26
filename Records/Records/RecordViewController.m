@@ -27,7 +27,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	[self setTitle:_artistName];
+    if (_artistName)
+        [self setTitle:_artistName];
 
     [self initRequest];
     

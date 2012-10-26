@@ -14,6 +14,8 @@
 #define MOCKITO_SHORTHAND
 #import <OCMockito/OCMockito.h>
 
+#import "UIWebViewStub.h"
+
 @interface BaseTestCase : SenTestCase
 
 @property (nonatomic, readonly, strong) UIStoryboard *storyboard;
