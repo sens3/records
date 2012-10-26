@@ -78,54 +78,61 @@ describe(@"RecordListViewController", ^{
             expect(actual).to.equal(2);
         });
         
-        it(@"returns a record cell", ^{
-            UITableViewCell *cell = [controller tableView:controller.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
-            expect(cell).notTo.beNil();
+        describe(@"cellForRowAtIndexPath", ^{
+           
+            it(@"returns a record cell", ^{
+                UITableViewCell *cell = [controller tableView:controller.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+                expect(cell).notTo.beNil();
+                
+                expect(cell.reuseIdentifier).to.equal(@"Record Cell");
+                
+            });
             
-            expect(cell.reuseIdentifier).to.equal(@"Record Cell");
+            it(@"sets the cell text label", ^{
+                UITableViewCell *cell;
+                
+                cell = [controller tableView:controller.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+                
+                expect(cell.textLabel.text).to.equal(@"First Artist");
+                
+                cell = [controller tableView:controller.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0]];
+                
+                expect(cell.textLabel.text).to.equal(@"Second Artist");
+            });
             
         });
         
-        it(@"sets the cell text label", ^{
-            UITableViewCell *cell;
+        describe(@"perform seque", ^{
             
-            cell = [controller tableView:controller.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+            it(@"shows RecordViewController on \"Show Record\" segue", ^{
+                [controller performSegueWithIdentifier:@"Show Record" sender:nil];
+                
+                RecordViewController *recordVC = (RecordViewController *) controller.navigationController.visibleViewController;
+                
+                expect(recordVC).to.beInstanceOf([RecordViewController class]);
+            });
             
-            expect(cell.textLabel.text).to.equal(@"First Artist");
+            it(@"sets artist name for RecordViewController", ^{
+                UITableViewCell *cell;
+                RecordViewController *recordVC;
+                
+                cell = [controller tableView:controller.tableView
+                       cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+                [controller performSegueWithIdentifier:@"Show Record" sender:cell];
+                recordVC = (RecordViewController *) controller.navigationController.visibleViewController;
+                
+                expect(recordVC.artistName).to.equal(@"First Artist");
+                
+                cell = [controller tableView:controller.tableView
+                       cellForRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0]];
+                [controller performSegueWithIdentifier:@"Show Record" sender:cell];
+                recordVC = (RecordViewController *) controller.navigationController.visibleViewController;
+                
+                expect(recordVC.artistName).to.equal(@"Second Artist");
+                
+            });
             
-            cell = [controller tableView:controller.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0]];
-            
-            expect(cell.textLabel.text).to.equal(@"Second Artist");
         });
-        
-        it(@"shows RecordViewController on \"Show Record\" segue", ^{
-            [controller performSegueWithIdentifier:@"Show Record" sender:nil];
-            
-            RecordViewController *recordVC = (RecordViewController *) controller.navigationController.visibleViewController;
-            
-            expect(recordVC).to.beInstanceOf([RecordViewController class]);
-        });
-        
-        it(@"sets artist name for RecordViewCOntroller", ^{
-            UITableViewCell *cell;
-            RecordViewController *recordVC;
-            
-            cell = [controller tableView:controller.tableView
-                   cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
-            [controller performSegueWithIdentifier:@"Show Record" sender:cell];
-            recordVC = (RecordViewController *) controller.navigationController.visibleViewController;
-            
-            expect(recordVC.artistName).to.equal(@"First Artist");
-            
-            cell = [controller tableView:controller.tableView
-                   cellForRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0]];
-            [controller performSegueWithIdentifier:@"Show Record" sender:cell];
-            recordVC = (RecordViewController *) controller.navigationController.visibleViewController;
-            
-            expect(recordVC.artistName).to.equal(@"Second Artist");
-
-        });
-            
         
     });
     

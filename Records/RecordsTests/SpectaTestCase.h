@@ -18,3 +18,5 @@
 
 #define EXP_SHORTHAND
 #import <Expecta.h>
+
+#import "SenTestLog+SpectaLog.h"

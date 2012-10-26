@@ -28,6 +28,7 @@
 		A744173A1639D89F005C0E78 /* Record.m in Sources */ = {isa = PBXBuildFile; fileRef = A74417391639D89F005C0E78 /* Record.m */; };
 		A744173D1639D8D4005C0E78 /* RecordSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = A744173C1639D8D4005C0E78 /* RecordSpecs.m */; };
 		A744174D1639DDF3005C0E78 /* RecordListViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A744174C1639DDF3005C0E78 /* RecordListViewControllerSpec.m */; };
+		A771A3A2163AE0E6003D657D /* SenTestLog+SpectaLog.m in Sources */ = {isa = PBXBuildFile; fileRef = A771A3A1163AE0E6003D657D /* SenTestLog+SpectaLog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		A74417391639D89F005C0E78 /* Record.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Record.m; sourceTree = "<group>"; };
 		A744173C1639D8D4005C0E78 /* RecordSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordSpecs.m; sourceTree = "<group>"; };
 		A744174C1639DDF3005C0E78 /* RecordListViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordListViewControllerSpec.m; sourceTree = "<group>"; };
+		A771A3A0163AE0E6003D657D /* SenTestLog+SpectaLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SenTestLog+SpectaLog.h"; sourceTree = "<group>"; };
+		A771A3A1163AE0E6003D657D /* SenTestLog+SpectaLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SenTestLog+SpectaLog.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +237,8 @@
 				A74417331639D81E005C0E78 /* SpectaTestCase.h */,
 				A744173C1639D8D4005C0E78 /* RecordSpecs.m */,
 				A744174C1639DDF3005C0E78 /* RecordListViewControllerSpec.m */,
+				A771A3A0163AE0E6003D657D /* SenTestLog+SpectaLog.h */,
+				A771A3A1163AE0E6003D657D /* SenTestLog+SpectaLog.m */,
 			);
 			name = SpectaTests;
 			sourceTree = "<group>";
@@ -378,6 +383,7 @@
 				A744171E163986BC005C0E78 /* RecordViewControllerTests.m in Sources */,
 				A744173D1639D8D4005C0E78 /* RecordSpecs.m in Sources */,
 				A744174D1639DDF3005C0E78 /* RecordListViewControllerSpec.m in Sources */,
+				A771A3A2163AE0E6003D657D /* SenTestLog+SpectaLog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
