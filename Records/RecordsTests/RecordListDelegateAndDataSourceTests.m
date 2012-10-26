@@ -21,7 +21,8 @@
 - (void)setUp
 {
     [super setUp];
-    controller = [self instantiateStoryboardControllerWithIdentifier:@"Record List"];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+    controller = [storyboard instantiateViewControllerWithIdentifier:@"Record List"];
     record1 = mock([Record class]);
     [given([record1 artistName]) willReturn:@"First Artist"];
     record2 = mock([Record class]);

@@ -18,9 +18,4 @@
 
 @interface BaseTestCase : SenTestCase
 
-@property (nonatomic, readonly, strong) UIStoryboard *storyboard;
-@property (nonatomic, readonly, strong) UINavigationController *navController;
-
-- (id)instantiateStoryboardControllerWithIdentifier:(NSString *)identifier;
-
 @end

@@ -13,15 +13,21 @@
 
 @implementation RecordViewControllerTests{
     RecordViewController *controller;
+    UINavigationController *navController;
+    Record *duke;
 }
 
 - (void)setUp
 {
     [super setUp];
-    controller = [self instantiateStoryboardControllerWithIdentifier:@"Record"];
-    Record *duke = [[Record alloc] init];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+    controller = [storyboard instantiateViewControllerWithIdentifier:@"Record"];
+    duke = [[Record alloc] init];
     duke.artistName = @"Duke Ellington";
     controller.record = duke;
+    navController = [[UINavigationController alloc] init];
+    [navController pushViewController:controller animated:NO];
+    [controller loadView];
 }
 
 - (void)test_RecordVC_existsInTheStoryboard

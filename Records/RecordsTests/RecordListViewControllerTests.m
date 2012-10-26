@@ -13,6 +13,7 @@
 
 @implementation RecordListViewControllerTests{
     RecordListViewController *controller;
+    UINavigationController *navController;
     id record1;
     id record2;
 }
@@ -20,7 +21,11 @@
 - (void)setUp
 {
     [super setUp];
-    controller = [self instantiateStoryboardControllerWithIdentifier:@"Record List"];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+    controller = [storyboard instantiateViewControllerWithIdentifier:@"Record List"];
+    navController = [[UINavigationController alloc] init];
+    [navController pushViewController:controller animated:NO];
+    [controller loadView];
     record1 = mock([Record class]);
     [given([record1 artistName]) willReturn:@"First Artist"];
     record2 = mock([Record class]);
@@ -35,9 +40,10 @@
 
 - (void)test_RecordListVC_isTheVisibleController
 {
-    UINavigationController *navController = [self.storyboard instantiateInitialViewController];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+    UINavigationController *initialController = [storyboard instantiateInitialViewController];
 
-    id contr = [navController visibleViewController];
+    id contr = [initialController visibleViewController];
 
     STAssertTrue([contr isKindOfClass:[RecordListViewController class]],
                  @"Presented View Controller should be of class RecordListViewController but was %@", [contr class]);
