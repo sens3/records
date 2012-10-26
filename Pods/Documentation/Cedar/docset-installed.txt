@@ -1,4 +1,0 @@
-Documentation set was installed to Xcode!
-
-Path: /Users/smn/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.Cedar-0.0.1.docset
-Time: 2012-10-25 20:21:57 +0000
