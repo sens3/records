@@ -74,7 +74,6 @@
 		A2D9904EB6254C0296574F8F /* Pods-RecordsTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordsTests.xcconfig"; path = "../Pods/Pods-RecordsTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		A70EC134165BDD7B005B62C4 /* Records (Integration Tests).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Records (Integration Tests).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A70EC136165BDD7B005B62C4 /* Records copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Records copy-Info.plist"; path = "/Users/smn/prog/Records/Records/Records copy-Info.plist"; sourceTree = "<absolute>"; };
-		A70EC13B165BDF62005B62C4 /* RecordsTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecordsTestController.h; path = RecordsTests/RecordsTestController.h; sourceTree = "<group>"; };
 		A70EC13C165BDF62005B62C4 /* RecordsTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecordsTestController.m; path = RecordsTests/RecordsTestController.m; sourceTree = "<group>"; };
 		A70EC13E165BDFEE005B62C4 /* libPods-RecordsTests.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libPods-RecordsTests.a"; path = "../Pods/build/Release-iphoneos/libPods-RecordsTests.a"; sourceTree = "<group>"; };
 		A70EC149165BE135005B62C4 /* KIFTestScenario+Records.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KIFTestScenario+Records.h"; sourceTree = "<group>"; };
@@ -123,6 +122,7 @@
 		A771A3C2163B1462003D657D /* RecordCellSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordCellSpec.m; sourceTree = "<group>"; };
 		A771A3C6163B1661003D657D /* RecordTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordTests.h; sourceTree = "<group>"; };
 		A771A3C7163B1661003D657D /* RecordTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordTests.m; sourceTree = "<group>"; };
+		A7FFE2D5165C248100BC9A80 /* RecordsTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecordsTestController.h; path = RecordsTests/RecordsTestController.h; sourceTree = "<group>"; };
 		C0AE87F13B18442387D2F6FF /* Pods-RecordsTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordsTests.xcconfig"; path = "../Pods/Pods-RecordsTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		F46EB2B30A5D4DDEB9E6D9D9 /* libPods-RecordsIntegrationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecordsIntegrationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -166,7 +166,7 @@
 		A70EC13A165BDEF3005B62C4 /* RecordsIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
-				A70EC13B165BDF62005B62C4 /* RecordsTestController.h */,
+				A7FFE2D5165C248100BC9A80 /* RecordsTestController.h */,
 				A70EC13C165BDF62005B62C4 /* RecordsTestController.m */,
 				A70EC149165BE135005B62C4 /* KIFTestScenario+Records.h */,
 				A70EC14A165BE135005B62C4 /* KIFTestScenario+Records.m */,
