@@ -1,5 +1,6 @@
 PODS:
   - Expecta (0.2.0)
+  - KIF (0.0.1)
   - OCHamcrest (1.8)
   - OCMockito (0.22):
     - OCHamcrest (~> 1.7)
@@ -7,5 +8,6 @@ PODS:
 
 DEPENDENCIES:
   - Expecta
+  - KIF
   - OCMockito
   - Specta

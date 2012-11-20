@@ -28,7 +28,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self setTitle:_record.artistName];
+    [self.navigationItem setTitle:_record.artistName];
+    [self.navigationItem setAccessibilityLabel:[NSString stringWithFormat:@"Artist Name: %@", _record.artistName]];
+
     [self initRequest];
     [self.webView loadRequest:_request];
 }

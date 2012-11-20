@@ -18,6 +18,7 @@
     if (self) {
         _record = r;
         [self.textLabel setText:_record.artistName];
+        self.accessibilityLabel = _record.artistName;
     }
     
     return self;

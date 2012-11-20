@@ -8,11 +8,26 @@
 
 #import "AppDelegate.h"
 
+#if RUN_KIF_TESTS
+#import "RecordsTestController.h"
+#endif
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    [_window makeKeyAndVisible];
+    
+#if RUN_KIF_TESTS
+    
+    [[RecordsTestController sharedInstance] startTestingWithCompletionBlock:^{
+        // Exit after the tests complete so that CI knows we're done
+        exit([[RecordsTestController sharedInstance] failureCount]);
+    }];
+#endif
+    
     return YES;
 }
 							

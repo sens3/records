@@ -7,7 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01C64ADB8EAC4A92A47B0645 /* libPods-RecordsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92559F166548457EBD0D5DBE /* libPods-RecordsTests.a */; };
+		18B3E32C37FD487D998055A5 /* libPods-RecordsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BDC85B4F62C44B5A63F9EA4 /* libPods-RecordsTests.a */; };
+		A70EC124165BDD7B005B62C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A74416D31638ED14005C0E78 /* main.m */; };
+		A70EC125165BDD7B005B62C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A74416D71638ED14005C0E78 /* AppDelegate.m */; };
+		A70EC126165BDD7B005B62C4 /* RecordListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A74416DD1638ED14005C0E78 /* RecordListViewController.m */; };
+		A70EC127165BDD7B005B62C4 /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A744171916397D8B005C0E78 /* RecordViewController.m */; };
+		A70EC128165BDD7B005B62C4 /* Record.m in Sources */ = {isa = PBXBuildFile; fileRef = A74417391639D89F005C0E78 /* Record.m */; };
+		A70EC129165BDD7B005B62C4 /* RecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A771A3BA163B0DC3003D657D /* RecordCell.m */; };
+		A70EC12B165BDD7B005B62C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74416C71638ED14005C0E78 /* UIKit.framework */; };
+		A70EC12C165BDD7B005B62C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74416C91638ED14005C0E78 /* Foundation.framework */; };
+		A70EC12D165BDD7B005B62C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74416CB1638ED14005C0E78 /* CoreGraphics.framework */; };
+		A70EC12F165BDD7B005B62C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A74416D01638ED14005C0E78 /* InfoPlist.strings */; };
+		A70EC130165BDD7B005B62C4 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A74416D91638ED14005C0E78 /* MainStoryboard.storyboard */; };
+		A70EC13D165BDF62005B62C4 /* RecordsTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = A70EC13C165BDF62005B62C4 /* RecordsTestController.m */; };
+		A70EC14B165BE135005B62C4 /* KIFTestScenario+Records.m in Sources */ = {isa = PBXBuildFile; fileRef = A70EC14A165BE135005B62C4 /* KIFTestScenario+Records.m */; };
 		A74416C81638ED14005C0E78 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74416C71638ED14005C0E78 /* UIKit.framework */; };
 		A74416CA1638ED14005C0E78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74416C91638ED14005C0E78 /* Foundation.framework */; };
 		A74416CC1638ED14005C0E78 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74416CB1638ED14005C0E78 /* CoreGraphics.framework */; };
@@ -35,6 +48,7 @@
 		A771A3BE163B0E8E003D657D /* RecordCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A771A3BD163B0E8E003D657D /* RecordCellTests.m */; };
 		A771A3C3163B1462003D657D /* RecordCellSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A771A3C2163B1462003D657D /* RecordCellSpec.m */; };
 		A771A3C8163B1661003D657D /* RecordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A771A3C7163B1661003D657D /* RecordTests.m */; };
+		EA5616BA80164376BDF3C3CD /* libPods-RecordsIntegrationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F46EB2B30A5D4DDEB9E6D9D9 /* libPods-RecordsIntegrationTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,15 +59,30 @@
 			remoteGlobalIDString = A74416C21638ED14005C0E78;
 			remoteInfo = Records;
 		};
+		A7564889165BE75400B1C8F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A74416BA1638ED14005C0E78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A74416C21638ED14005C0E78;
+			remoteInfo = Records;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		92559F166548457EBD0D5DBE /* libPods-RecordsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecordsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BDC85B4F62C44B5A63F9EA4 /* libPods-RecordsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecordsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AFEA9205564372B2E59403 /* Pods-RecordsIntegrationTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordsIntegrationTests.xcconfig"; path = "../Pods/Pods-RecordsIntegrationTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		A2D9904EB6254C0296574F8F /* Pods-RecordsTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordsTests.xcconfig"; path = "../Pods/Pods-RecordsTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		A70EC134165BDD7B005B62C4 /* Records (Integration Tests).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Records (Integration Tests).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A70EC136165BDD7B005B62C4 /* Records copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Records copy-Info.plist"; path = "/Users/smn/prog/Records/Records/Records copy-Info.plist"; sourceTree = "<absolute>"; };
+		A70EC13B165BDF62005B62C4 /* RecordsTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecordsTestController.h; path = RecordsTests/RecordsTestController.h; sourceTree = "<group>"; };
+		A70EC13C165BDF62005B62C4 /* RecordsTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecordsTestController.m; path = RecordsTests/RecordsTestController.m; sourceTree = "<group>"; };
+		A70EC13E165BDFEE005B62C4 /* libPods-RecordsTests.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libPods-RecordsTests.a"; path = "../Pods/build/Release-iphoneos/libPods-RecordsTests.a"; sourceTree = "<group>"; };
+		A70EC149165BE135005B62C4 /* KIFTestScenario+Records.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KIFTestScenario+Records.h"; sourceTree = "<group>"; };
+		A70EC14A165BE135005B62C4 /* KIFTestScenario+Records.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KIFTestScenario+Records.m"; sourceTree = "<group>"; };
 		A74416C31638ED14005C0E78 /* Records.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Records.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A74416C71638ED14005C0E78 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A74416C91638ED14005C0E78 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		A74416CB1638ED14005C0E78 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A74416CB1638ED14005C0E78 /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A74416CF1638ED14005C0E78 /* Records-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Records-Info.plist"; sourceTree = "<group>"; };
 		A74416D11638ED14005C0E78 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A74416D31638ED14005C0E78 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -94,9 +123,22 @@
 		A771A3C2163B1462003D657D /* RecordCellSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordCellSpec.m; sourceTree = "<group>"; };
 		A771A3C6163B1661003D657D /* RecordTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordTests.h; sourceTree = "<group>"; };
 		A771A3C7163B1661003D657D /* RecordTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordTests.m; sourceTree = "<group>"; };
+		C0AE87F13B18442387D2F6FF /* Pods-RecordsTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordsTests.xcconfig"; path = "../Pods/Pods-RecordsTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		F46EB2B30A5D4DDEB9E6D9D9 /* libPods-RecordsIntegrationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecordsIntegrationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A70EC12A165BDD7B005B62C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A70EC12B165BDD7B005B62C4 /* UIKit.framework in Frameworks */,
+				A70EC12C165BDD7B005B62C4 /* Foundation.framework in Frameworks */,
+				A70EC12D165BDD7B005B62C4 /* CoreGraphics.framework in Frameworks */,
+				EA5616BA80164376BDF3C3CD /* libPods-RecordsIntegrationTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A74416C01638ED14005C0E78 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -114,23 +156,38 @@
 				A74416E61638ED14005C0E78 /* SenTestingKit.framework in Frameworks */,
 				A74416E71638ED14005C0E78 /* UIKit.framework in Frameworks */,
 				A74416E81638ED14005C0E78 /* Foundation.framework in Frameworks */,
-				01C64ADB8EAC4A92A47B0645 /* libPods-RecordsTests.a in Frameworks */,
+				18B3E32C37FD487D998055A5 /* libPods-RecordsTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A70EC13A165BDEF3005B62C4 /* RecordsIntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				A70EC13B165BDF62005B62C4 /* RecordsTestController.h */,
+				A70EC13C165BDF62005B62C4 /* RecordsTestController.m */,
+				A70EC149165BE135005B62C4 /* KIFTestScenario+Records.h */,
+				A70EC14A165BE135005B62C4 /* KIFTestScenario+Records.m */,
+			);
+			name = RecordsIntegrationTests;
+			sourceTree = "<group>";
+		};
 		A74416B81638ED13005C0E78 = {
 			isa = PBXGroup;
 			children = (
 				A74416CD1638ED14005C0E78 /* Records */,
 				A74416EB1638ED14005C0E78 /* RecordsTests */,
 				A771A3C4163B15CB003D657D /* RecordSpecs */,
+				A70EC13A165BDEF3005B62C4 /* RecordsIntegrationTests */,
 				A771A3C5163B1608003D657D /* Stubs */,
 				A74416C61638ED14005C0E78 /* Frameworks */,
 				A74416C41638ED14005C0E78 /* Products */,
 				A2D9904EB6254C0296574F8F /* Pods-RecordsTests.xcconfig */,
+				A70EC136165BDD7B005B62C4 /* Records copy-Info.plist */,
+				81AFEA9205564372B2E59403 /* Pods-RecordsIntegrationTests.xcconfig */,
+				C0AE87F13B18442387D2F6FF /* Pods-RecordsTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +196,7 @@
 			children = (
 				A74416C31638ED14005C0E78 /* Records.app */,
 				A74416E41638ED14005C0E78 /* RecordsTests.octest */,
+				A70EC134165BDD7B005B62C4 /* Records (Integration Tests).app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,11 +204,13 @@
 		A74416C61638ED14005C0E78 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A70EC13E165BDFEE005B62C4 /* libPods-RecordsTests.a */,
 				A74416C71638ED14005C0E78 /* UIKit.framework */,
 				A74416C91638ED14005C0E78 /* Foundation.framework */,
 				A74416CB1638ED14005C0E78 /* CoreGraphics.framework */,
 				A74416E51638ED14005C0E78 /* SenTestingKit.framework */,
-				92559F166548457EBD0D5DBE /* libPods-RecordsTests.a */,
+				F46EB2B30A5D4DDEB9E6D9D9 /* libPods-RecordsIntegrationTests.a */,
+				7BDC85B4F62C44B5A63F9EA4 /* libPods-RecordsTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -290,6 +350,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A70EC122165BDD7B005B62C4 /* RecordsIntegrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A70EC131165BDD7B005B62C4 /* Build configuration list for PBXNativeTarget "RecordsIntegrationTests" */;
+			buildPhases = (
+				A70EC123165BDD7B005B62C4 /* Sources */,
+				A70EC12A165BDD7B005B62C4 /* Frameworks */,
+				A70EC12E165BDD7B005B62C4 /* Resources */,
+				C211754D96C14B869CABCF27 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A756488A165BE75400B1C8F4 /* PBXTargetDependency */,
+			);
+			name = RecordsIntegrationTests;
+			productName = Records;
+			productReference = A70EC134165BDD7B005B62C4 /* Records (Integration Tests).app */;
+			productType = "com.apple.product-type.application";
+		};
 		A74416C21638ED14005C0E78 /* Records */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A74416F61638ED14005C0E78 /* Build configuration list for PBXNativeTarget "Records" */;
@@ -316,6 +395,7 @@
 				A74416E11638ED14005C0E78 /* Resources */,
 				A74416E21638ED14005C0E78 /* ShellScript */,
 				3C90BC15B9CB4B77922514C3 /* Copy Pods Resources */,
+				AF3449A6793E4C669A1CA87C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -350,11 +430,21 @@
 			targets = (
 				A74416C21638ED14005C0E78 /* Records */,
 				A74416E31638ED14005C0E78 /* RecordsTests */,
+				A70EC122165BDD7B005B62C4 /* RecordsIntegrationTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A70EC12E165BDD7B005B62C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A70EC12F165BDD7B005B62C4 /* InfoPlist.strings in Resources */,
+				A70EC130165BDD7B005B62C4 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A74416C11638ED14005C0E78 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -402,9 +492,52 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		AF3449A6793E4C669A1CA87C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Pods-RecordsTests-resources.sh\"\n";
+		};
+		C211754D96C14B869CABCF27 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Pods-RecordsIntegrationTests-resources.sh\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A70EC123165BDD7B005B62C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A70EC124165BDD7B005B62C4 /* main.m in Sources */,
+				A70EC125165BDD7B005B62C4 /* AppDelegate.m in Sources */,
+				A70EC126165BDD7B005B62C4 /* RecordListViewController.m in Sources */,
+				A70EC127165BDD7B005B62C4 /* RecordViewController.m in Sources */,
+				A70EC128165BDD7B005B62C4 /* Record.m in Sources */,
+				A70EC129165BDD7B005B62C4 /* RecordCell.m in Sources */,
+				A70EC13D165BDF62005B62C4 /* RecordsTestController.m in Sources */,
+				A70EC14B165BE135005B62C4 /* KIFTestScenario+Records.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A74416BF1638ED14005C0E78 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -445,6 +578,11 @@
 			target = A74416C21638ED14005C0E78 /* Records */;
 			targetProxy = A74416E91638ED14005C0E78 /* PBXContainerItemProxy */;
 		};
+		A756488A165BE75400B1C8F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A74416C21638ED14005C0E78 /* Records */;
+			targetProxy = A7564889165BE75400B1C8F4 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -475,6 +613,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A70EC132165BDD7B005B62C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81AFEA9205564372B2E59403 /* Pods-RecordsIntegrationTests.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Records/Records-Prefix.pch";
+				INFOPLIST_FILE = "Records copy-Info.plist";
+				PRODUCT_NAME = "Records (Integration Tests)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A70EC133165BDD7B005B62C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81AFEA9205564372B2E59403 /* Pods-RecordsIntegrationTests.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Records/Records-Prefix.pch";
+				INFOPLIST_FILE = "Records copy-Info.plist";
+				PRODUCT_NAME = "Records (Integration Tests)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		A74416F41638ED14005C0E78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -548,7 +710,7 @@
 		};
 		A74416FA1638ED14005C0E78 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2D9904EB6254C0296574F8F /* Pods-RecordsTests.xcconfig */;
+			baseConfigurationReference = C0AE87F13B18442387D2F6FF /* Pods-RecordsTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Records.app/Records";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -566,7 +728,7 @@
 		};
 		A74416FB1638ED14005C0E78 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2D9904EB6254C0296574F8F /* Pods-RecordsTests.xcconfig */;
+			baseConfigurationReference = C0AE87F13B18442387D2F6FF /* Pods-RecordsTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Records.app/Records";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -585,6 +747,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A70EC131165BDD7B005B62C4 /* Build configuration list for PBXNativeTarget "RecordsIntegrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70EC132165BDD7B005B62C4 /* Debug */,
+				A70EC133165BDD7B005B62C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A74416BD1638ED14005C0E78 /* Build configuration list for PBXProject "Records" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
