@@ -19,7 +19,7 @@ Please run __pod install__ before building the app.
 ### Where to find them
 
 * Folder __RecordsTests__ holds the OCUnit tests.
-* Fodler __RecordsSpecs__ holds the Specta specs.
+* Folder __RecordsSpecs__ holds the Specta specs.
 
 ### How to run them seperately (if you want to)
 
@@ -92,3 +92,14 @@ Cons: no partial mocks
 Github: [https://github.com/jonreid/OCMockito](https://github.com/jonreid/OCMockito)
 
 
+#### KIF
+
+I also added a few functional tests using [KIF](https://github.com/square/KIF).
+
+You can either run it from within XCode by using the RecordsIntegrationTests scheme.
+
+Or you can use the runkif.sh script, it depends on ios-sim which can be installed via homebrew:
+
+    brew install ios-sim
+    
+   
